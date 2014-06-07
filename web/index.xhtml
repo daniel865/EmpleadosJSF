@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+    <f:view contentType="text/html">
+        <h:head>
+            <f:facet name="first">
+                <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
+                <title>Gestionar Empleado</title>
+            </f:facet>
+        </h:head>
+
+        <h:body>
+
+            <p:layout fullPage="true">
+
+                <p:layoutUnit position="center">
+
+                    <h:form>
+
+                        <p:panel header="Gestionar Empleado">
+                            <h:panelGrid id="loginPanel" columns="2">
+
+                                <h:outputText value="Número de Identificación" />
+                                <p:inputText id="nro_identificacion"  ></p:inputText>
+                                <p:spacer></p:spacer>
+                                <p:message for="nro_identificacion" ></p:message>
+
+                                <h:outputText value="Nombres" />
+                                <p:inputText id="nombres"></p:inputText>
+                                <p:spacer></p:spacer>
+                                <p:message for="nombres"></p:message>
+                                
+                                <h:outputText value="Primer Apellido" />
+                                <p:inputText id="apellido1"></p:inputText>
+                                <p:spacer></p:spacer>
+                                <p:message for="apellido1"></p:message>
+                                
+                                <h:outputText value="Segundo Apellido" />
+                                <p:inputText id="apellido1"></p:inputText>
+                                <p:spacer></p:spacer>
+                                <p:message for="apellido1"></p:message>
+
+                                <p:spacer></p:spacer>
+                                
+                                <p:commandButton></p:commandButton>
+
+                            </h:panelGrid>
+
+
+                        </p:panel>
+
+
+                    </h:form>
+
+
+                </p:layoutUnit>
+
+            </p:layout>
+
+        </h:body>
+
+    </f:view>
+</html>
+
